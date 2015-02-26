@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SwActivity" >
+   <LinearLayout
+        android:id="@+id/sw_main"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+        <fragment 
+            android:id="@+id/Fragment_sw"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+        </LinearLayout>
+ 
+   <LinearLayout 
+       android:id="@+id/sw_linear_show1"
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:layout_below="@+id/sw_main"
+       android:orientation="vertical"
+       >
+       <fragment 
+            android:id="@+id/Fragment_sw1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            />
+   </LinearLayout>
+     <LinearLayout 
+       android:id="@+id/sw_linear_show2"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:layout_below="@+id/sw_linear_show1"
+       android:orientation="vertical"
+       >
+
+         <fragment
+             android:id="@+id/Fragment_sw2"
+             android:layout_width="match_parent"
+             android:layout_height="200dp" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/sw_linear_show3"
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true" >
+
+       <fragment
+           android:id="@+id/Fragment_sw3"
+           android:layout_width="match_parent"
+           android:layout_height="30dp" />
+   </LinearLayout>
+
+</RelativeLayout>

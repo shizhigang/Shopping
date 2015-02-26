@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/sw_iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sw_iv1"
+        android:layout_below="@+id/sw_iv1"
+        android:text="首页" />
+
+    <ImageView
+        android:id="@+id/sw_iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sw_iv1"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/sw_iv1"
+        android:src="@drawable/list" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/sw_iv2"
+        android:text="分类" />
+
+    <ImageView
+        android:id="@+id/sw_iv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sw_iv2"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/sw_iv2"
+        android:src="@drawable/common_loading6_0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/sw_iv3"
+        android:text="发现" />
+
+   
+
+    <ImageView
+        android:id="@+id/sw_iv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:src="@drawable/car" />
+   <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/sw_iv4"
+        android:text="购物车" />
+   
+
+    <ImageView
+        android:id="@+id/sw_iv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sw_iv3"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:src="@drawable/mine" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignRight="@+id/sw_iv5"
+        android:text="我的" />
+</RelativeLayout>
